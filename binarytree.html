@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tree Test</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="binarytree.js"></script>
+    <link rel="stylesheet" href="binarystyle.css">
+</head>
+<body>
+
+   <nav class="navbar">
+     <!-- LOGO -->
+     <div class="logo">
+       <a href="#"><img src="Resources/logo_transparent.png" width="120px" height="85px"></a>
+     </div>
+     <ul class="nav-links">
+       <div class="menu">
+         <li><a href="index.html">Home</a></li>
+         <li class="services">
+           <a href="/">Solutions</a>
+           <ul class="dropdown">
+             <li><a href="/">Stack </a></li>
+             <li><a href="/">Queue</a></li>
+             <li><a href="sorting.html">Sorting</a></li>
+             <li><a href="binarytree.html">Binary Tree</a></li>
+           </ul>
+         </li>
+         <li><a href="Contact.html">Contact Us</a></li>
+
+       </div>
+     </ul>
+   </nav>
+
+<br>
+
+<div class="row1" style="text-align: center;">
+    <div> Insert (
+        <button id = "but1" onclick="show()" onmouseup="trace()">15</button>
+        <button id = "but2" onclick="show()" onmouseup="trace()" disabled>8</button>
+        <button id = "but3" onclick="show()" onmouseup="trace()" disabled>17</button>
+        <button id = "but4" onclick="show()" onmouseup="lazytrace1()" disabled>5</button>
+        <button id = "but5" onclick="show()" onmouseup="lazytrace2()" disabled>10</button>
+        <button id = "but6" onclick="show()" onmouseup="lazytrace3()" disabled>16</button>
+        <button id = "but7" onclick="show()" onmouseup="lazytrace4()" disabled>18</button>
+        <button id = "but8" onclick="show()" onmouseup="lazytrace5()" disabled>13</button>
+        )
+    </div>
+
+    <div id="drawDiv" style="position: relative; overflow: hidden; ">
+        <svg style="position: absolute; left: 0px; top: 0px;" width="700" height="500">
+            <g id="line1" transform="translate(262.5,150)">
+                <line x1="67.20481655284077" y1="-38.40275231590901" x2="-67.20481655284077" y2="38.40275231590901"></line>
+                <line x1="-67.20481655284077" y1="38.40275231590901" x2="-56.28450858266874" y2="39.015761358743895"></line>
+                <line x1="-67.20481655284077" y1="38.40275231590901" x2="-62.18879106642657" y2="28.683267012167708"></line></g>
+            <g id="line3" transform="translate(131.25,250)">
+                <line x1="28.35745479107339" y1="-32.408519761226735" x2="-28.35745479107339" y2="32.408519761226735"></line>
+                <line x1="-28.35745479107339" y1="32.408519761226735" x2="-17.83612581609825" y2="29.42011837413889"></line>
+                <line x1="-28.35745479107339" y1="32.408519761226735" x2="-26.79213602355825" y2="21.583609442611394"></line></g>
+            <g id="line4" transform="translate(218,250)">
+                <line x1="-28.35745479107339" y1="-32.408519761226735" x2="28.35745479107339" y2="32.408519761226735"></line>
+                <line x1="28.35745479107339" y1="32.408519761226735" x2="26.792136023558253" y2="21.583609442611394"></line>
+                <line x1="28.35745479107339" y1="32.408519761226735" x2="17.836125816098253" y2="29.420118374138887"></line></g>
+            <g id="line7" transform="translate(284.375,350)">
+                <line x1="-12.50585975478933" y1="-28.58482229666133" x2="12.50585975478933" y2="28.58482229666133"></line>
+                <line x1="12.50585975478933" y1="28.58482229666133" x2="14.278754776626258" y2="17.791965886445087"></line>
+                <line x1="12.50585975478933" y1="28.58482229666133" x2="3.376059409187084" y2="22.561895109699737"></line></g>
+            <g id="line2" transform="translate(437.5,150)">
+                <line x1="-67.20481655284077" y1="-38.40275231590901" x2="67.20481655284077" y2="38.40275231590901"></line>
+                <line x1="67.20481655284077" y1="38.40275231590901" x2="62.18879106642655" y2="28.68326701216772"></line>
+                <line x1="67.20481655284077" y1="38.40275231590901" x2="56.28450858266875" y2="39.01576135874391"></line></g>
+            <g id="line5" transform="translate(481.25,250)">
+                <line x1="28.35745479107339" y1="-32.408519761226735" x2="-28.35745479107339" y2="32.408519761226735"></line>
+                <line x1="-28.35745479107339" y1="32.408519761226735" x2="-17.83612581609825" y2="29.42011837413889"></line>
+                <line x1="-28.35745479107339" y1="32.408519761226735" x2="-26.79213602355825" y2="21.583609442611394"></line></g>
+            <g id="line6" transform="translate(568.75,250)">
+                <line x1="-28.35745479107339" y1="-32.408519761226735" x2="28.35745479107339" y2="32.408519761226735"></line>
+                <line x1="28.35745479107339" y1="32.408519761226735" x2="26.792136023558253" y2="21.583609442611394"></line>
+                <line x1="28.35745479107339" y1="32.408519761226735" x2="17.836125816098253" y2="29.420118374138887"></line></g>
+            <g id="number0" transform="translate(350,100)">
+                <circle  cx="0" cy="0" r="21.875"></circle>
+                <text x="0" dy="0.6ex" y="0">15</text></g>
+            <g id="number1" transform="translate(175,200)">
+                <circle  cx="0" cy="0" r="21.875"></circle>
+                <text  x="0" dy="0.6ex" y="0">8</text></g>
+            <g id="number3" transform="translate(87.5,300)">
+                <circle cx="0" cy="0" r="21.875"></circle>
+                <text  x="0" dy="0.6ex" y="0">5</text></g>
+            <g id="number4" transform="translate(262.5,300)">
+                <circle  cx="0" cy="0" r="21.875"></circle>
+                <text  x="0" dy="0.6ex" y="0">10</text></g>
+            <g id="number7" transform="translate(306.25,400)">
+                <circle  cx="0" cy="0" r="21.875"></circle>
+                <text x="0" dy="0.6ex" y="0">13</text></g>
+            <g id="number2" transform="translate(525,200)">
+                <circle  cx="0" cy="0" r="21.875"></circle>
+                <text x="0" dy="0.6ex" y="0">17</text></g>
+            <g id="number5" transform="translate(437.5,300)">
+                <circle  cx="0" cy="0" r="21.875"></circle>
+                <text  x="0" dy="0.6ex" y="0">16</text></g>
+            <g id="number6" transform="translate(612.5,300)">
+                <circle cx="0" cy="0" r="21.875"></circle>
+                <text  x="0" dy="0.6ex" y="0">18</text></g>
+        </svg>
+    </div>
+    <div id="commentDiv">
+        <p id="comment">
+
+        </p>
+        <br>
+        <p id="algo">
+
+        </p>
+    </div>
+<br>
+      <footer style="background-color: #ffb3b3;">
+
+    <div class="row" style="background-color: #ffb3b3;">
+      <div class="column">
+        <figure>
+        <img src="Resources/logo_transparent.png" width="250px" height="220px">
+        <p><b>On JEV Website You will be able to solve Algorithms in smoothy and Funny way.</b> </p>
+      </figure>
+      </div>
+      <div class="column">
+        <br>
+        <br>
+        <br>
+        <h4 >Info Links</h4>
+        <br>
+        <br>
+        <ul class="info-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+      </div>
+      <div class="column">
+        <br>
+        <br>
+        <br>
+        <h4 >Contact Details</h4>
+        <br>
+        <br>
+        <ul class="support-links">
+          <li><a href="#">Supprot@JEV.com</a></li>
+
+        </ul>
+
+      </div>
+      <div class="column">
+        <br>
+        <br>
+        <br>
+        <h4 >Social Links</h4>
+        <br>
+        <br>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://www.instagram.com/?nocaa=1">Instagram</a></li>
+          <li><a href="https://twitter.com/">Twitter</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+
+
+  </footer>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,61 @@
+text{
+    z-index: 2;
+    font-family: Arial;
+    fill: black;
+    font-size: 16.4063px;
+    font-weight: normal;
+    font-style: normal;
+    opacity: 1;
+    text-anchor: middle;
+}
+
+circle {
+    z-index: 1;
+    stroke: rgb(29, 27, 25);
+    stroke-width: 3px;
+    stroke-opacity: 1;
+    stroke-dasharray: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: rgb(204, 221, 255);
+    fill-opacity: 1;
+}
+
+line{
+     z-index: 0;
+    cursor: inherit;
+    stroke: rgb(29, 27, 25);
+    stroke-width: 2px;
+    stroke-opacity: 1;
+    stroke-dasharray: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+g{
+    opacity: 0;
+    transition: opacity 0.6s linear;
+}
+
+g.show {
+  opacity: 1;
+}
+
+
+#drawDiv {
+    width: 700px;
+    height: 500px;
+    border: solid 1px grey;
+    margin: auto;
+
+}
+
+#commentDiv {
+    width: 700px;
+    height: 200px;
+    border: solid 1px grey;
+    margin: auto;
+    text-align: center;
+
+}
