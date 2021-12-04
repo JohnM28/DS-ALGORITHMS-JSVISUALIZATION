@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stackStyle.css">
+        <link rel = "stylesheet" href ="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    </head>
+        <body style = "margin: 0; padding: 0;">
+            <nav class="navbar">
+                <!-- LOGO -->
+    <div class="logo">
+       <a href="#"><img src="Resources/logo_transparent.png" width="120px" height="85px"></a>
+     </div>
+     <ul class="nav-links">
+       <div class="menu">
+         <li><a href="index.html">Home</a></li>
+         <li class="services">
+           <a href="/">Solutions</a>
+           <ul class="dropdown">
+             <li><a href="/">Stack </a></li>
+             <li><a href="/">Queue</a></li>
+             <li><a href="sorting.html">Sorting</a></li>
+             <li><a href="binarytree.js">Binary Tree</a></li>
+           </ul>
+         </li>
+         <li><a href="Contact.html">Contact Us</a></li>
+
+       </div>
+     </ul>
+   </nav>
+   <br>
+            <div class = container style="margin:auto;">
+                <div class = "content">
+                    <div class = "heading">
+                        <h1>stack</h1>
+                    </div>
+                    <br>
+                    <div style = "text-align: center ;">
+                    <div class = "discrebtion" style=" font-size: 22px;">
+                        Stacks are data structures that follow the Last-In-First-Out (LIFO) principle, meaning the last item inserted into a stack is the first one to be deleted.
+                        In other words, a stack is a list of elements that are accessible only from one end of the list, which is called the Top of Stack (ToS).
+                    </div></div>
+                    <br>
+                    <div class = "creat-stack" style = "text-align: center;">
+                        <button class = "creatS" id= "creat" onclick="creatStack()">creat stack</button>
+                    </div>
+                    <br><br>
+                    <div id = "stack" class = " stack displaynone"  style = "position: relative;">
+                        <div class = "controlrs">
+                            <input type="text" class="stack-input" id="value" placeholder="Add Item to the stack">
+                            <button id= "push" class = "btn-push" onclick="pushEle()">push</button>
+                            <button id = "pop" class = "btn-pop"onclick="popEle()">pop</button>
+                        </div>
+                        <div class= "stack_items" id = "stack_items">
+                            <div class = "empty" id = "empty">
+                                empty
+                            </div>
+        
+                        </div>
+                        <div class = "console" id = "console" style = "  left: 0; overflow-y: scroll; bottom: 0; color: white; background-color: rgb(31, 56, 56); height: 200px; position: fixed; width:100% ;"></div>
+                    </div>
+                </div>
+        
+                </div>
+                <br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br>
+                <footer style="background-color: #ffb3b3;">
+
+                    <div class="row" style="background-color: #ffb3b3;">
+                      <div class="column">
+                        <figure>
+                        <img src="Resources/logo_transparent.png" width="250px" height="220px">
+                        <p><b>On JEV Website You will be able to solve Algorithms in smoothy and Funny way.</b> </p>
+                      </figure>
+                      </div>
+                      <div class="column">
+                        <br>
+                        <br>
+                        <br>
+                        <h4 >Info Links</h4>
+                        <br>
+                        <br>
+                        <ul class="info-links">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Solutions</a></li>
+                          <li><a href="#">Contact</a></li>
+                        </ul>
+                
+                      </div>
+                      <div class="column">
+                        <br>
+                        <br>
+                        <br>
+                        <h4 >Contact Details</h4>
+                        <br>
+                        <br>
+                        <ul class="support-links">
+                          <li><a href="#">Supprot@JEV.com</a></li>
+                
+                        </ul>
+                
+                      </div>
+                      <div class="column">
+                        <br>
+                        <br>
+                        <br>
+                        <h4 >Social Links</h4>
+                        <br>
+                        <br>
+                        <ul class="social-links">
+                          <li><a href="https://www.facebook.com/">Facebook</a></li>
+                          <li><a href="https://www.instagram.com/?nocaa=1">Instagram</a></li>
+                          <li><a href="https://twitter.com/">Twitter</a></li>
+                        </ul>
+                
+                      </div>
+                
+                    </div>
+                
+                
+                
+                
+                  </footer>
+            <script src ="stack.js"></script>
+    </body>
+</html>
