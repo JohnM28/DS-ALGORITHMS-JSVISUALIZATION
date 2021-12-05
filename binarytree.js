@@ -85,3 +85,20 @@ function lazytrace5(){
         "<pre>" + "if value < current.value" + "\n" +
         "if current.left = ø" + "\n" + " current.left ← node(value)" + "\n" + "else" + "\n" + "if current.right = ø current.right ← node(value)" + "\n" + "else InsertNode(current.right, value)" + "</pre>";
 }
+
+// function clear() {
+//     comment.textContent = " s"
+//     algo.innerHTML = "s "
+//     for (let i = 1; i < but; i++){
+//         var z = 0
+//         document.getElementById("but"+ i).disabled = true;
+//         line =document.getElementById('line'+i)
+//         number = document.getElementById('number'+z)
+//         number.classList.remove("show");
+//         line.classList.remove("show");
+//         z++
+//     }
+//     node = 0
+//     lin_num = 1
+//     but = 1
+// }
