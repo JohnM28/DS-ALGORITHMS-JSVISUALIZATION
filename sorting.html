@@ -3,42 +3,153 @@
 <head>  
 	<meta charset="utf-8">  
 	<title>CANVAS!</title> 
+	<link rel="stylesheet" href="style.css" />
+	<style>
+		.inputt{
+			background-color: #ffb3b3;
+			border:#ffb3b3 ;
+			border-radius: 25px;
+			color: white;
+			width: 75px;
+			height:30px;
+			margin-top: 15px;
+		}
+		.title{
+			color: #ffb3b3;
+		}
+	</style>
+
 <head>
-<body> 
-	
-	 
-	<div id="container">
+<body>
+	<nav class="navbar">
+		<!-- LOGO -->
+		<div class="logo">
+		  <a href="#"><img src="Resources/logo_transparent.png" width="120px" height="85px"></a>
+		</div>
+		<ul class="nav-links">
+		  <div class="menu">
+			<li><a href="index.html">Home</a></li>
+			<li class="services">
+			  <a href="/">Solutions</a>
+			  <ul class="dropdown">
+				<li><a href="stack.html">Stack </a></li>
+				<li><a href="queue.html">Queue</a></li>
+				<li><a href="sorting.html">Sorting</a></li>
+				<li><a href="binarytree.html">Binary Tree</a></li>
+			  </ul>
+			</li>
+			<li><a href="Contact.html">Contact Us</a></li>
+
+		  </div>
+		</ul>
+	  </nav>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div id="container" style="text-align: center;">
 		<h1>CANVAS!</h1>
+		<br>
+		<br>
 
 		<ul>
 			<li>
 				<span class="title">Bubble Sort</span>
+
 				<canvas id="canvas-bubble-sort" width="200px" height="200px"></canvas>
 				<p>
 					Bubble sort is a simple sorting algorithm. The algorithm starts at the beginning of the data set. It compares the first two elements, and if the first is greater than the second, it swaps them. It continues doing this for each pair of adjacent elements to the end of the data set. It then starts again with the first two elements, repeating until no swaps have occurred on the last pass. This algorithm's average and worst case performance is O(n2), so it is rarely used to sort large, unordered, data sets.
 				</p>
-				<input type="button" value="Run" id="btnBubbleSort">
+
+				<input type="button" value="Run" id="btnBubbleSort" class="inputt" >
 			</li>
+			<br>
+			<br>
+			<br>
 			<li>
 				<span class="title">Selection Sort</span>
 				<canvas id="canvas-selection-sort" width="200px" height="200px"></canvas>
 				<p>
 					Selection sort is an in-place comparison sort. It has O(n2) complexity, making it inefficient on large lists, and generally performs worse than the similar insertion sort. Selection sort is noted for its simplicity, and also has performance advantages over more complicated algorithms in certain situations. The algorithm finds the minimum value, swaps it with the value in the first position, and repeats these steps for the remainder of the list. It does no more than n swaps, and thus is useful where swapping is very expensive.
 				</p>
-				<input type="button" value="Run" id="btnSelectionSort">
+				<input type="button" value="Run" id="btnSelectionSort" class="inputt" >
 			</li>
+			<br>
+			<br>
+			<br>
 			<li>
 				<span class="title">Insertion Sort</span>
 				<canvas id="canvas-insert-sort" width="200px" height="200px"></canvas>
 				<p>
 					Insertion sort is a simple sorting algorithm that is relatively efficient for small lists and mostly sorted lists, and often is used as part of more sophisticated algorithms. It works by taking elements from the list one by one and inserting them in their correct position into a new sorted list. In arrays, the new list and the remaining elements can share the array's space, but insertion is expensive, requiring shifting all following elements over by one. Shell sort is a variant of insertion sort that is more efficient for larger lists.
 				</p>
-				<input type="button" value="Run" id="btnInsertionSort">
+				<input type="button" value="Run" id="btnInsertionSort" class="inputt" >
 			</li>
 		</ul>
 	</div>
+	<br>
+	<br>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="sorting.js"></script>
+
+	<footer style="background-color: #ffb3b3;">
+
+		<div class="row" style="background-color: #ffb3b3;">
+		  <div class="column">
+			<figure>
+			<img src="Resources/logo_transparent.png" width="250px" height="220px">
+			<p><b>On JEV Website You will be able to solve Algorithms in smoothy and Funny way.</b> </p>
+		  </figure>
+		  </div>
+		  <div class="column">
+			<br>
+			<br>
+			<br>
+			<h4 >Info Links</h4>
+			<br>
+			<br>
+			<ul class="info-links">
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="#">Solutions</a></li>
+			  <li><a href="Contact.html">Contact</a></li>
+			</ul>
+
+		  </div>
+		  <div class="column">
+			<br>
+			<br>
+			<br>
+			<h4 >Contact Details</h4>
+			<br>
+			<br>
+			<ul class="support-links">
+			  <li><a href="#">Supprot@JEV.com</a></li>
+
+			</ul>
+
+		  </div>
+		  <div class="column">
+			<br>
+			<br>
+			<br>
+			<h4 >Social Links</h4>
+			<br>
+			<br>
+			<ul class="social-links">
+			  <li><a href="https://www.facebook.com/">Facebook</a></li>
+			  <li><a href="https://www.instagram.com/?nocaa=1">Instagram</a></li>
+			  <li><a href="https://twitter.com/">Twitter</a></li>
+			</ul>
+
+		  </div>
+
+		</div>
+
+
+
+
+	  </footer>
 
 </body>  
 </html>  
